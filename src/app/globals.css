@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #111;
+  color: #bbb;
+}
+
+:root {
+  --color-primary: #53c28b,
+  --color-secondary: #bbb;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  min-height: 100vh;
+  padding: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.theme {
+  transition: .3s all ease-in-out;
+}
+
+.light {
+  background-color: #fff;
+  color: #111;
+}
+.dark {
+  background-color: #111;
+  color: #fff;
+}
